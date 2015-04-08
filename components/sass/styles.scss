@@ -1,0 +1,7 @@
+@import "jeet/index";
+
+@include edit();
+
+section {
+  @include center(98%, 16px);
+}
