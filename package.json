@@ -1,0 +1,15 @@
+{
+  "name" : "Portfolio",
+  "author" : "Mynor Alexander",
+  "version" : "0.0.1",
+  "description": "Portfolio website",
+  "github" : "",
+  "dependencies" : {
+    "grunt" : "~0.4.5",
+    "grunt-contrib-watch" : "~0.6.1",
+    "grunt-contrib-compass" : "~1.0.1",
+    "grunt-contrib-uglify" : "~0.9.1",
+    "matchdep" : "~0.3.0",
+    "jeet" : "*"
+  }
+}
