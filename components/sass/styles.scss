@@ -5,9 +5,4 @@
 @import "mixins";
 @import "base";
 @import "modules";
-
-// @include edit();
-
-section {
-  @include center(98%, 16px);
-}
+@import "layout";
