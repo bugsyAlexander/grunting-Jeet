@@ -6,8 +6,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-
 body {
   font-family: $font-primary;
   font-weight: 400;
@@ -22,6 +20,10 @@ body {
   font-weight: inherit;
   line-height: 1.2;
   color: $gold;
+}
+
+ul, li {
+  list-style: none;
 }
 
 h1 {

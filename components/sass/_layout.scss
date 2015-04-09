@@ -8,21 +8,22 @@ section {
   @include center(960px);
 }
 
-.navBar {
-  @include center(98%);
-  position: relative;
-  z-index: 999;
+/**
+  * Navigation styles
+  * column
+  * ul, li, a color styles
+**/
+
+.half {
+  @include col(1/2);
+  height: 60px;
 }
 
-nav {
+.third {
+  @include col(1/3 1/2);
   height: 60px;
-  background-color: $black;
-  border-bottom: 2px solid darken($black, 2.5%);
-
-  li {
-    list-style: none;
-    display: inline-block;
-  }
+  padding: 1em 0;
+  text-align: center;
 
   a {
     text-decoration: none;
@@ -30,25 +31,37 @@ nav {
     font-family: $font-secondary;
     letter-spacing: .05rem;
     color: $gold;
-    padding: 1.25em;
+    padding: .25em .5em 1.25em .5em;
 
     &:hover {
       color: $gray94;
       border-bottom: 1px solid $gray94;
-    }
-  }
-}
+    } // a:hover
+  } // a
+} // nav ul li
 
-.siteLogo {
-  @include col(1/3);
-}
 
-.siteNav {
-  @include col(2/3);
+.navBar {
   height: 60px;
-  padding: 1em;
+  background-color: $black;
+  border-bottom: 2px solid darken($black, 2.5%);
 }
 
-.intro {
+nav {
+  @include center(98%);
+  position: relative;
+  z-index: 999;
+  height: 60px;
+}
+
+/**
+  * Service Section
+  * Background
+  * Container
+**/
+
+.bgBlack {
   background-color: $black;
+  padding-top: 7em;
+  height: 708px;
 }

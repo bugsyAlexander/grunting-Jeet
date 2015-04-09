@@ -22,29 +22,33 @@
 </head>
 <body>
 
-<nav>
-  <div class="navBar">
-    <ul class="siteLogo">
-      <li><a href="index.html" class="logo"></a></li>
-    </ul>
-    <ul class="siteNav">
-      <li><a href="#">Portfolio</a></li> 
-      <li><a href="#">About</a></li> 
-      <li><a href="#">Contact</a></li> 
-    </ul>
-  </div> <!-- navBar -->
-</nav> <!-- nav -->
-  
-<section class="intro">
-  <div class="container">
+<div class="navBar">
+  <nav role="navigation">
+    <ul class="half">
+      <li half><a href="index.html" class="logo"></a></li>
+    </ul> <!-- half && logo -->
 
-<header>
-  <h4>Hello world... My name is Mynor Alexander:</h4>
-  <h1>Front-End Engineer, <br> From Orange County, CA.</h1>
-</header>
+    <ul class="half">
+        <li class="third"><a href="#">Work</a></li>
+        <li class="third"><a href="#">About</a></li>
+        <li class="third"><a href="#">Contact</a></li>
+    </ul> <!-- navLinks -->
+  </nav> <!-- navigation -->
+</div> <!-- navBar -->
 
-  </div> <!-- container -->
-</section>
+<div class="bgBlack">
+  <section>
+    <div class="container">
+      <header role="banner">
+        <hgroup>
+          <h4>Hello world... My name is Mynor Alexander:</h4>
+          <h1>Front-End Engineer, <br> From Orange County, CA.</h1>
+        </hgroup>
+      </header> <!-- banner -->
+    </div> <!-- container -->
+  </section> <!-- <section> -->
+</div>  <!-- bgBlack -->
+
 
 <!-- javascript -->
 <script src="js/script.js"></script>
