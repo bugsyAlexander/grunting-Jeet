@@ -2,6 +2,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-uncss');
 
   grunt.initConfig({
     uglify: {
@@ -27,8 +28,14 @@ module.exports = function (grunt) {
         files: ['components/sass/*.scss'],
         tasks: ['compass:dev']
       } // sass
-    } // watch
+    }, // watch
+    uncss: {
+      dist: {
+        files: {
+          'css/styles.css' : ['index.html']
+        }
+      } // dist
+    } // uncss
   }); // initConfig
-
-  grunt.registerTask('default', 'watch');
+  grunt.registerTask('default', ['watch', 'uncss']);
 }; // exports
