@@ -8,6 +8,11 @@ section {
   @include center(960px);
 }
 
+.pageContent {
+  position: relative;
+  z-index: 0;
+}
+
 /**
   * Navigation styles
   * column
@@ -24,6 +29,10 @@ section {
   height: 60px;
   padding: 1em 0;
   text-align: center;
+
+  @media (max-width: 860px) {
+     @include stack();
+  }
 
   a {
     text-decoration: none;
@@ -52,7 +61,61 @@ nav {
   position: relative;
   z-index: 999;
   height: 60px;
-}
+
+  @media (max-width: 860px) {
+
+     .sideBar {
+      @include cf();
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      width: 180px;
+      background-color: darken($black, 5%);
+
+      ul li {
+        @include col(1/1);
+        width: 180px;
+        margin: 0;
+        padding: 0;
+
+        a {
+          display: inline-block;
+          width: 180px;
+          padding: 1em 0;
+          text-indent: 1rem;
+          height: inherit;
+          border-top: 1px solid lighten($black, 0.5%);
+          border-bottom: 1px solid darken($black, 8%);
+
+          // &:first-child {
+          //   margin-top: 60px;
+          // }
+
+          &:hover {
+            background-color: $ivory;
+            border-left: 3px solid $orange;
+            border-bottom: none;
+            color: $brown !important;
+          }
+        }
+      } // ul li
+
+    .burgerMenu {
+      position: absolute;
+      left: -40px;
+      margin: .75em 1em 1em 0;
+      border-bottom: none;
+      border-top: none;
+      // border: 1px solid red;
+    }
+
+
+
+    } // .sideBar
+  } // media
+} // nav
+
 
 /**
   * Service Section
