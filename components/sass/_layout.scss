@@ -1,11 +1,16 @@
 // @include edit();
 
 section {
-  @include center(1160px, 16px);
+  // @include center(1160px, 16px);
+  @include center(90%);
 }
 
 .container {
   @include center(960px);
+}
+
+section header {
+  z-index: 1;
 }
 
 /* ========================
@@ -130,10 +135,51 @@ Slide-out menu Section
 Intro Section
 ========================= */
 
+#center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -2;
+  height: 707px;
+  width: auto;
+
+  @media (max-width: 1020px) {
+    left: -340px;
+    @include single-transition(all, 1s, ease-in-out);
+  }
+
+  @media (max-width: 720px) {
+    left: -16rem;
+    @include single-transition(all, 1s, ease-in-out);
+  }
+}
+
+#front {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  height: 707px;
+  width: auto;
+
+  @media (max-width: 1020px) {
+    left: 170px;
+    @include single-transition(all, 1s, ease-in-out);
+  }
+
+  @media (max-width: 720px) {
+    left: 1rem;
+    @include single-transition(all, 1s, ease-in-out);
+  }
+}
+
 .bgBlack {
+  position: relative;
   background-color: $black;
   padding-top: 7em;
   height: 708px;
+  z-index: 1;
 }
 
 /* ========================
