@@ -127,7 +127,7 @@ Slide-out menu Section
 }
 
 /* ========================
-Service Section
+Intro Section
 ========================= */
 
 .bgBlack {
@@ -266,4 +266,52 @@ Line hover transitions
   -ms-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+/* ========================
+Services Section
+========================= */
+.services {
+  background-color: white;
+  height: 768px; 
+}
+
+/* ========================
+Portfolio Section
+========================= */
+
+.portfolio {
+  background-color: white;
+  height: 1536px;
+}
+
+/* ========================
+Testimonials Section
+========================= */
+.testimonials {
+ background-color: $gray94;
+ height: 768px;
+}
+
+/* ========================
+Contact Section
+========================= */
+
+.contact {
+ background-color: $ivory;
+ height: 768px;
+}
+
+
+/* ========================
+Footer Section
+========================= */
+footer {
+  position: relative;
+  background-color: $black;
+  height: 275px;
+
+  span {
+    color: white;
+  }
 }

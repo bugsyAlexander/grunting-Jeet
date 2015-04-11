@@ -41,9 +41,16 @@ h1 {
   }
 }
 
-h2 {font-size: 2.827em;}
+h2 { font-size: 2.827em;}
 
-h3 {font-size: 1.999em;}
+h3 { font-size: 1.999em; }
+
+h4.featured {
+  margin: 5rem auto;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: .7rem;
+}
 
 h4 {
   font-size: 1.414em;
@@ -57,17 +64,28 @@ h4 {
   }
 }
 
+h4.featured + hr {
+  border: 0;
+  height: 1px;
+  width: 5.0625rem;
+  margin: 0 auto;
+  background-color: $gold;
+  margin-top: -3rem;
+}
+
 h5 {font-size: 1em}
-
-p {margin-bottom: 1.3em;}
-
-small, .font_small {font-size: 0.707em;}
 
 h6 {
   display: none;
   visibility: hidden;
 }
 
+p {margin-bottom: 1.3em;}
+
+small, .font_small {font-size: 0.707em;}
+
 .footerType {
   font-size: .9rem;
+  color: $gold;
+  @include align(v);
 }
