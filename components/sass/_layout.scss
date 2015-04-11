@@ -8,11 +8,9 @@ section {
   @include center(960px);
 }
 
-/**
-  * Navigation styles
-  * column
-  * ul, li, a color styles
-**/
+/* ========================
+Navigation Section
+========================= */
 
 .half {
   @include col(1/2);
@@ -107,6 +105,10 @@ nav {
   } // media
 } // nav
 
+/* ========================
+Slide-out menu Section
+========================= */
+
 #toggleBtn {
   display: none;
   &:checked + .sideBar {
@@ -124,16 +126,144 @@ nav {
   }
 }
 
-// END OF NAV STYLES
-
-/**
-  * Service Section
-  * Background
-  * Container
-**/
+/* ========================
+Service Section
+========================= */
 
 .bgBlack {
   background-color: $black;
   padding-top: 7em;
   height: 708px;
+}
+
+/* ========================
+Ghost button styling 
+========================= */
+
+.link { 
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 182px;
+  height: 47px;
+  border: 1px solid rgba(255,255,255,0.25);
+  @include align();
+  margin-top: 240px;
+}
+
+.link a {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 182px;
+  height: 47px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #FFF;
+  text-align: center;
+  padding-top: 0.7rem;
+  text-decoration: none;
+  letter-spacing: 0.05rem;
+
+}
+
+/* ========================
+Line styling 
+========================= */
+
+.link .line-top {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 0;
+  height: 1px;
+  background: rgba(255,255,255,1);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.link .line-right {
+  position: absolute;
+  bottom: 0;
+  right: -1px;
+  width: 1px;
+  height: 0;
+  background: rgba(255,255,255,1);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.link .line-bottom {
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 0;
+  height: 1px;
+  background: rgba(255,255,255,1);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.link .line-left {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 1px;
+  height: 0;
+  background: rgba(255,255,255,1);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* ========================
+Line hover transitions 
+========================= */
+
+.link:hover .line-top {
+  width: 182px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.link:hover .line-right {
+  height: 46px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.link:hover .line-bottom {
+  width: 182px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.link:hover .line-left {
+  height: 46px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
