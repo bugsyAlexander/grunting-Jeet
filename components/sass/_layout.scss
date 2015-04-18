@@ -9,9 +9,14 @@ section {
 Navigation Section
 ========================= */
 
-.logo {
+#siteLogo {
+  width: 100%;
+  height: 70px;
+  @include shift(-1/4);
+}
+
+.logoContainer {
   @include col(1/4);
-  @include shift(-.25/4);
 }
 
 .menu {
@@ -19,12 +24,15 @@ Navigation Section
   height: 60px;
 }
 
-.navLinks {
-  @include span(1/4);
+ul {
   height: 60px;
   padding: 1.1em 0;
   text-align: center;
 
+  li {
+    @include span(1/4);
+  } // li
+  
   a {
     text-decoration: none;
     text-transform: uppercase;
@@ -41,7 +49,7 @@ Navigation Section
 
     } // a:hover
   } // a
-} // nav ul li
+} // ul
 
 
 .navBar {
