@@ -1,1 +1,5 @@
-@include edit();
+// @include edit();
+
+body {
+  @include center(90%);
+}

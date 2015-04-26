@@ -1,36 +1,34 @@
 @import url(http://fonts.googleapis.com/css?family=Quattrocento|Quattrocento+Sans:400,700);
 
-html {font-size: 1em;}
-
 body {
   font-family: $font-primary;
   font-weight: 400;
-  line-height: 1.45;
+  line-height: 1.375em;
   color: $brown;
 }
 
 #{headings()} {
   font-family: $font-secondary;
   font-weight: 400;
-  margin: 1.414em 0 0.5em;
-  font-weight: inherit;
-  line-height: 1.2;
   color: $gold;
 }
 
 h1 {
-  margin-top: 0;
-  font-size: 3.998em;
+  font-size: 3rem;
+  line-height: 1.05em;
 }
 
-h2 {font-size: 2.827em;}
+h2 {
+  font-size: 2.25rem;
+  line-height: 1.25em;
+}
 
-h3 {font-size: 1.999em;}
+h3 {
+  font-size: 1.75rem;
+  line-height: 1.25em;
+}
 
-h4 {font-size: 1.414em;}
-
-h5 {font-size: 1em}
-
-p {margin-bottom: 1.3em;}
-
-small, .font_small {font-size: 0.707em;}
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.22222222em;
+}
