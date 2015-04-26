@@ -3,16 +3,27 @@
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-box-sizing: border-box; /* Safari 3.0 - 5.0, Chrome 1 - 9, Android 2.1 - 3.x */
+  -moz-box-sizing: border-box;    /* Firefox 1 - 28 */
+  box-sizing: border-box;         /* Safari 5.1+, Chrome 10+, Firefox 29+, Opera 7+, IE 8+, Android 4.0+, iOS any */
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 #{headings()} {
   font-family: $font-secondary;
   font-weight: 400;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+  @include single-transition(all, 1s, ease-in-out);
   color: $gold;
 }
 
-//   Jason Pamental & Robert Bringhurst Typography Overwrite
+/* ========================
+Jason Pamental & Robert Bringhurst - Typography Overwrite
+========================= */
+
 body {
   font-family: $font-primary;
   font-size: 100%;
