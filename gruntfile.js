@@ -32,7 +32,7 @@ module.exports = function (grunt) {
     uncss: {
       dist: {
         files: {
-          'css/styles.css' : ['index.html']
+          'css/style.css' : ['index.html']
         }
       } // dist
     } // uncss

@@ -10,6 +10,7 @@
     "grunt-contrib-compass" : "~1.0.1",
     "grunt-contrib-uglify" : "~0.9.1",
     "matchdep" : "~0.3.0",
+    "bourbon" : "~4.2.2",
     "jeet" : "*",
     "grunt-uncss" : "~0.4.0"
   }
