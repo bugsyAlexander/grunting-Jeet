@@ -1,10 +1,15 @@
 // color palette
-$gray94 : #f0f0f0;
-$ivory  : #cdcdc1;
-$gold   : #918f7b;
-$black  : #2b2d2d;
-$brown  : #514f45;
-$orange : #f16b3b;
+$color-1  : #f0f0f0;
+$color-2  : #cdcdc1;
+$color-3  : #918f7b;
+$color-4  : #2b2d2d;
+$color-5  : #514f45;
+$color-6  : #f16b3b;
 
 $font-primary: 'Quattrocento Sans', sans-serif;
 $font-secondary: 'Quattrocento', serif;
+
+// z-index
+$below-content: 1;
+$content: 2;
+$above-content: 3;
